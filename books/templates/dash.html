@@ -2,7 +2,11 @@
 <!doctype html>
 <html lang="en">
   <head>
- 
+    <script>
+    document.getElementById('homeLink').href = window.location.origin + '/dash/';
+    document.getElementById('addBookLink').href = window.location.origin + '/add/';
+
+   </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -45,8 +49,8 @@ body {
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="http://127.0.0.1:8000/dash/">HOME<span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="http://127.0.0.1:8000/add/">ADD BOOK</a>
+            <a class="nav-item nav-link active" href="#" id="homeLink">HOME<span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#" id="addBookLink">ADD BOOK</a>
             <a class="nav-item nav-link" href="http://127.0.0.1:8000/view/">VIEW BOOK</a>
             <a class="nav-item nav-link" href="http://127.0.0.1:8000/update/">UPDATE RECORD</a>
             <a class="nav-item nav-link" href="http://127.0.0.1:8000/delete/">DELETE RECORD</a></td>
