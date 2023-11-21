@@ -6,6 +6,11 @@
       document.addEventListener('DOMContentLoaded', function() {
       document.getElementById('homeLink').href = window.location.origin + '/dash/';
       document.getElementById('addBookLink').href = window.location.origin + '/add/';
+      document.getElementById('viewBookLink').href = window.location.origin + '/view/';
+      document.getElementById('updateBookLink').href = window.location.origin + '/update/';
+      document.getElementById('deleteBookLink').href = window.location.origin + '/delete/';
+     document.getElementById('logoutLink').href = window.location.origin + '/logout/';
+
 
     });
 
@@ -54,11 +59,10 @@ body {
         <div class="navbar-nav">
             <a class="nav-item nav-link active" href="" id="homeLink">HOME<span class="sr-only">(current)</span></a>
             <a class="nav-item nav-link" href="#" id="addBookLink">ADD BOOK</a>
-            <a class="nav-item nav-link" href="http://127.0.0.1:8000/view/">VIEW BOOK</a>
-            <a class="nav-item nav-link" href="http://127.0.0.1:8000/update/">UPDATE RECORD</a>
-            <a class="nav-item nav-link" href="http://127.0.0.1:8000/delete/">DELETE RECORD</a></td>
-
-            <a class="nav-item nav-link" href="http://127.0.0.1:8000/logout/">LOG OUT</a>
+            <a class="nav-item nav-link" href="#" id="viewBookLink">VIEW BOOK</a>
+            <a class="nav-item nav-link" href="#" id="updateBookLink">UPDATE RECORD</a>
+            <a class="nav-item nav-link" href="#" id="deleteBookLink">DELETE RECORD</a></td>
+            <a class="nav-item nav-link" href="#" id="logoutLink">LOG OUT</a>
         </div>
       </div>
     </nav>
