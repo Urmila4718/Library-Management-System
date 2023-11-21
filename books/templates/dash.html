@@ -3,7 +3,10 @@
 <html lang="en">
   <head>
     <script>
-    document.getElementById('homeLink').href = window.location.origin + '/dash/';
+      
+      document.addEventListener('DOMContentLoaded', function() {
+      document.getElementById('homeLink').href = window.location.origin + '/dash/';
+    });
     document.getElementById('addBookLink').href = window.location.origin + '/add/';
 
    </script>
